@@ -10,6 +10,7 @@ import {
   LayoutChangeEvent,
   StyleSheet,
 } from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 export interface IFitImageProps extends ImageProperties {
   children?: ReactElement<any>;
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
 
 class FitImage extends Component<IFitImageProps, IFitImageState> {
   public static propTypes = propTypes;
-  private ImageComponent = ImageBackground || Image;
+  private ImageComponent = FastImage || ImageBackground || Image;
   private isFirstLoad: boolean;
   private mounted: boolean = false;
   private sizeStyle: ImageStyle = {};
