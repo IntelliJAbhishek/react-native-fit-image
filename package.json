@@ -2,7 +2,7 @@
   "name": "react-native-fit-image",
   "version": "1.5.5",
   "description": "Responsive image component to fit perfectly itself.",
-  "main": "src/FitImage.js",
+  "main": "src/FitImage.tsx",
   "scripts": {
     "build": "tsc",
     "build:test": "tsc -p tsconfig.test.json",
